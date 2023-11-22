@@ -59,7 +59,7 @@ const playRound = function (playerSelection, computerSelection) {
 
 playRound(playerSelection, computerSelection);
 console.log(`${computerWins}, ${playerWins}`);
-function game(playerSelectionX, computerSelection) {
+function game(playerSelection, computerSelection) {
   playRound(playerSelection, computerSelection);
   playerSelection = playerSelection2;
   playRound(playerSelection, computerSelection);
@@ -71,7 +71,7 @@ function game(playerSelectionX, computerSelection) {
   playRound(playerSelection, computerSelection);
   return;
 }
-game();
+game(playerSelection, computerSelection);
 
 if (playerWins > computerWins) {
   console.log(`You win ${playerWins} to ${computerWins}`);
