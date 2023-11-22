@@ -1,6 +1,6 @@
 "use strict";
 
-//console.log("Hellooooo World");
+// Computer choice
 
 const array = ["rock", "paper", "scissors"];
 
@@ -14,6 +14,8 @@ function getComputerChoice(arr) {
 }
 const computerSelection = getComputerChoice(array);
 console.log(computerSelection);
+
+//get user input times 5
 
 let playerSelection = prompt(
   "Please enter your choice: Rock, Paper or Scissors"
@@ -35,7 +37,7 @@ const playerSelection5 = prompt(
   "Please enter your choice: Rock, Paper or Scissors"
 ).toLowerCase();
 
-// const arrayPlayerSelection = [playerSelection1, playerSelection2, playerSelection3, playerSelection4, playerSelection5];
+// define winning conditions
 
 let playerWins = 0;
 let computerWins = 0;
@@ -57,6 +59,8 @@ const playRound = function (playerSelection, computerSelection) {
   }
 };
 
+// Play 5 rounds
+
 playRound(playerSelection, computerSelection);
 console.log(`${computerWins}, ${playerWins}`);
 function game(playerSelection, computerSelection) {
@@ -72,6 +76,8 @@ function game(playerSelection, computerSelection) {
   return;
 }
 game(playerSelection, computerSelection);
+
+//determine Winner
 
 if (playerWins > computerWins) {
   console.log(`You win ${playerWins} to ${computerWins}`);
